@@ -1,0 +1,34 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit-tweet {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #4056A1;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: Bungee;
+}
+
+.counter {
+  font-family: Bungee;
+}
+
+.negativeCount {
+  color: red;
+}
+
+
+textarea {
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 4px; 
+  background: transparent;
+}

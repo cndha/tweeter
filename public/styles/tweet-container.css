@@ -1,0 +1,51 @@
+.tweet-container {
+  width: 55%; 
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one-post {
+  color: #545149;
+  border-style: solid;
+  border-width: 3px;
+  padding: 0.5em;
+  background-color: transparent;
+}
+
+.one-post:hover {
+  box-shadow: 7px 7px #4056A1;
+}
+
+.fa-flag:hover {
+  color: rgb(245, 77, 105);
+}
+
+.fa-retweet:hover {
+  color: rgb(245, 77, 105);
+}
+
+.fa-heart:hover {
+  color: rgb(245, 77, 105);
+}
+
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+hr {
+  display: block;
+  height: 3px; 
+  background-color: #545149;
+}
+
+.tweet-footer {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  font-size: 15px;
+}

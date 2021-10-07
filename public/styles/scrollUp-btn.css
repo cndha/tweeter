@@ -1,0 +1,18 @@
+#scrollUp-btn {
+  display: none;
+  
+  position: fixed;
+  right: 90px;
+  bottom: 25px;
+  z-index: 99;
+
+  border-width: 0;
+  padding: 5px;
+  font-size: 60px;
+  color: rgb(104, 150, 218);
+  background: transparent;
+}
+
+#scrollUp-btn:hover {
+  color: rgb(29, 208, 249);
+}

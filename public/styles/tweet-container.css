@@ -20,21 +20,22 @@
 }
 
 .fa-flag:hover {
-  color: rgb(245, 77, 105);
+  color: rgb(254, 111, 134);
 }
 
 .fa-retweet:hover {
-  color: rgb(245, 77, 105);
+  color: rgb(254, 111, 134);
 }
 
 .fa-heart:hover {
-  color: rgb(245, 77, 105);
+  color: rgb(254, 111, 134);
 }
 
 
 .tweet-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
 }
 

@@ -17,10 +17,11 @@ $(document).ready(function() {
       return $('.error-tweet').slideDown(300);
     }
     
-
     $.post('/tweets', $(this).serialize())
       .done((response) => {
       loadTweets();
+      $('#tweet-text').val("");
+      $('output.counter').text(140);
       })
       .fail((error) => {
         console.log('failed')

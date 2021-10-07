@@ -28,14 +28,19 @@
   justify-content: space-between;
 }
 
-button {
+#tweet-btn {
   background-color: #4056A1;
-  border: none;
   color: white;
+  border-width: 0px;
+  border-radius: 5px;
   text-align: center;
   font-family: Bungee;
 }
 
+#tweet-btn:hover {
+  border-width: 2px;
+  border-color: rgb(29, 208, 249);
+}
 .counter {
   font-family: Bungee;
 }
@@ -50,4 +55,5 @@ textarea {
   outline: 0;
   border-width: 0 0 4px; 
   background: transparent;
+  font-weight: bold;
 }

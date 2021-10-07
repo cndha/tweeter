@@ -6,6 +6,25 @@
   flex-direction: column;
 }
 
+
+.error-tweet {
+  width: auto;
+  margin: 10px; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  color: red;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.fa-exclamation-triangle {
+  color: red;
+  padding: 3px;
+}
+
+
 .submit-tweet {
   display: flex;
   justify-content: space-between;

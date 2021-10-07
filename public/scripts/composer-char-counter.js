@@ -10,6 +10,11 @@ $(document).ready(function () {
       $(this).parent().find("output.counter").toggleClass("negativeCount", false);
     }
 
+    if ($('#tweet-text').val().length > 0 && $('#tweet-text').val().length <= 140) {
+      return $('.error-tweet').slideUp(100)
+    }
+
+
   })
 
 })

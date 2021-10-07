@@ -10,13 +10,11 @@ $(document).ready(function() {
     event.preventDefault();
 
     if ($('#tweet-text').val() === '' || $('#tweet-text').val() === null) {
-      alert('Text area cannot be empty');
-      return;
+      return $('.error-tweet').slideDown(300);
     }
 
     if ($('#tweet-text').val().length > 140) {
-      alert('Too many characters! Try again.')
-      return;
+      return $('.error-tweet').slideDown(300);
     }
     
 

@@ -26,3 +26,8 @@ nav {
     background-color: #8392C5;
   }
 }
+
+#compose-btn {
+  border: 0;
+  background: transparent;
+}

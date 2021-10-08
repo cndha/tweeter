@@ -1,14 +1,10 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 
 $(document).ready(function() {
 
   $('form').on("submit", function(event) {
     event.preventDefault();
 
+    // Validations for improper tweets
     if ($('#tweet-text').val() === '' || $('#tweet-text').val() === null) {
       return $('.error-tweet').slideDown(300);
     }
@@ -17,31 +13,33 @@ $(document).ready(function() {
       return $('.error-tweet').slideDown(300);
     }
     
+    //Ajax POST
     $.post('/tweets', $(this).serialize())
       .done((response) => {
-      loadTweets();
-      $('#tweet-text').val("");
-      $('output.counter').text(140);
+        loadTweets();
+        $('#tweet-text').val("");
+        $('output.counter').text(140);
       })
       .fail((error) => {
-        console.log('failed')
+        console.log('failed');
       })
       .always(() => {
-        console.log('finished post method tweets')
-      })
-  })
+        console.log('finished post method tweets');
+      });
+  });
 
+  //Ajax GET
   const loadTweets = function() {
     $.get('/tweets')
-    .done((response) => {
-      renderTweets(response)
-    })
-    .fail((error) => {
-      console.log(error)
-    })
-    .always(() => {
-      console.log("finished get request tweets")
-    })
+      .done((response) => {
+        renderTweets(response);
+      })
+      .fail((error) => {
+        console.log(error);
+      })
+      .always(() => {
+        console.log("finished get request tweets");
+      });
   };
 
   loadTweets();
@@ -56,8 +54,8 @@ const renderTweets = (tweets) => {
   }
 };
 
-
-const createTweetElement = function (data) { 
+//Single tweet box
+const createTweetElement = function (data) {
   const ago = timeago.format(data.created_at);
 
   const tweet = (`        
@@ -84,15 +82,15 @@ const createTweetElement = function (data) {
         </span>
       </footer>
     </article>
-    `)
+    `);
 
   return tweet;
 };
 
-const escape = function (str) {
+
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
-
 const safeHTML = `<p>${escape(textFromUser)}</p>`;

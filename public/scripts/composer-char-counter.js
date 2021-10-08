@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
   
-  $("#tweet-text").keyup(function () {
+  $("#tweet-text").keyup(function() {
     const countdown = 140 - $(this).val().length;
     $(this).parent().find("output.counter").text(countdown);
 
@@ -10,11 +10,10 @@ $(document).ready(function () {
       $(this).parent().find("output.counter").toggleClass("negativeCount", false);
     }
 
+    //For removing error message when within tweeting parameters
     if ($('#tweet-text').val().length > 0 && $('#tweet-text').val().length <= 140) {
-      return $('.error-tweet').slideUp(100)
+      return $('.error-tweet').slideUp(100);
     }
+  });
 
-
-  })
-
-})
+});

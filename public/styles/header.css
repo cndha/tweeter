@@ -10,15 +10,16 @@
 
   background-image: url("/images/background-img.png");
   background-color: #8392C5;
-
   color: white;
 }
 
 @media only screen and (min-width: 1064px) {
   .page-header{
+    border-width: 2px;
+    border-color: #545149;
+    border-style: solid;
     width: 700px;
     margin-top: 10em;
     margin-left: 5em;
   }
-
 }

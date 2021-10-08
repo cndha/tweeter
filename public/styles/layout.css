@@ -17,7 +17,7 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -33,4 +33,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f4f1ec;
+ }
+
+ @media only screen and (min-width: 1064px) {
+  body {
+    display: flex;
+  }
+
+  .container{
+    margin-top: 10em;
+  }
  }

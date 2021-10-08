@@ -1,15 +1,37 @@
 .new-tweet {
-  width: 55%; 
-  margin: auto;
+  width: 100%;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+@media only screen and (min-width: 1064px) {
+  .new-tweet {
+    width: auto;
+    margin-left: 7em;
+  }
+}
+
+
+textarea {
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 4px; 
+  background: transparent;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1064px) {
+  textarea {
+    width: 515px;
+  }
+}
+
 
 .error-tweet {
   display: none;
-  width: auto;
+  width: 100%;
   margin: 10px; 
   text-align: center;
   color: red;
@@ -28,6 +50,7 @@
   justify-content: space-between;
 }
 
+
 #tweet-btn {
   background-color: #4056A1;
   color: white;
@@ -39,7 +62,7 @@
 
 #tweet-btn:hover {
   border-width: 2px;
-  border-color: rgb(29, 208, 249);
+  border-color: #8FCBFF;
 }
 .counter {
   font-family: Bungee;
@@ -50,10 +73,3 @@
 }
 
 
-textarea {
-  width: 100%;
-  outline: 0;
-  border-width: 0 0 4px; 
-  background: transparent;
-  font-weight: bold;
-}

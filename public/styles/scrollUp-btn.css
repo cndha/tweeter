@@ -2,17 +2,23 @@
   display: none;
   
   position: fixed;
-  right: 90px;
+  right: 10px;
   bottom: 25px;
   z-index: 99;
 
   border-width: 0;
   padding: 5px;
-  font-size: 60px;
-  color: rgb(104, 150, 218);
+  font-size: 40px;
+  color: #4056A1;
   background: transparent;
 }
 
 #scrollUp-btn:hover {
-  color: rgb(29, 208, 249);
+  color: #8FCBFF;
+}
+
+@media only screen and (max-width: 850px) {
+  #scrollUp-btn {
+    right: 0px;
+  }
 }

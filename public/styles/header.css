@@ -9,5 +9,16 @@
   align-items: center;
 
   background-image: url("/images/background-img.png");
-  background-color: #B2C9D1;
+  background-color: #8392C5;
+
+  color: white;
+}
+
+@media only screen and (min-width: 1064px) {
+  .page-header{
+    width: 700px;
+    margin-top: 10em;
+    margin-left: 5em;
+  }
+
 }

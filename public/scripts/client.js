@@ -63,7 +63,12 @@ const createTweetElement = function (data) {
   const tweet = (`        
     <article class="tweet">
       <header class="tweet-header">
-      <span><img src="${data.user.avatars}">${data.user.name}</span>
+      <table>
+        <tr>
+          <td><img src="${data.user.avatars}"></td>
+          <td>${data.user.name}</td>
+        </tr>
+      </table>
       <span> ${data.user.handle} </span>
       </header>
       <body class="tweet-body">

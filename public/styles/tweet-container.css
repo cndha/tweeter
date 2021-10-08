@@ -1,9 +1,16 @@
 .tweets-container {
-  width: 55%; 
+  width: 100%; 
   margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 1064px) {
+  .tweets-container{
+    width: auto;
+    margin-left: 7em;
+  }
 }
 
 .tweet {
@@ -20,15 +27,15 @@
 }
 
 .fa-flag:hover {
-  color: rgb(254, 111, 134);
+  color: #FA3B72;
 }
 
 .fa-retweet:hover {
-  color: rgb(254, 111, 134);
+  color: #FA3B72;
 }
 
 .fa-heart:hover {
-  color: rgb(254, 111, 134);
+  color: #FA3B72;
 }
 
 
@@ -37,12 +44,14 @@
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
+  margin-bottom: 1.5em;
 }
 
 hr {
   display: block;
   height: 3px; 
   background-color: #545149;
+  margin-top: 1em;
 }
 
 .tweet-footer {
